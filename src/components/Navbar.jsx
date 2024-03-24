@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import logo from '../assets/logo.jpg'
 
-const Navbar = () => {
+const Navbar = ({darkMode, setDarkMode}) => {
     const [isOpen, setIsOpen] = useState(false)
-    const [darkMode, setDarkMode] = useState(false)
 
     //To handle hamburger menu
     const handleHam = () => {
@@ -34,10 +34,12 @@ const Navbar = () => {
 
   return (
 
-    <div className={`navbar relative w-full shadow-md ${darkMode ? 'shadow-gray-800': 'shadow-gray-400'} flex justify-between items-center min-h-[6vh] md:px-4`}>
+    <div className={`navbar sticky top-0 backdrop-blur-md max-w-full shadow-md ${darkMode ? 'shadow-gray-800': 'shadow-gray-400'} flex justify-between items-center min-h-[7vh] md:px-4`}>
         <div className="navLeft flex max-sm:flex-col max-sm:w-full">
-            <Link to='/' className='font-bold md:mr-4 max-sm:border-b-2 border-purple-900 max-sm:w-full p-2'><span className='p-1 px-4 m-2 rounded-lg blur-2 shadow-sm shadow-purple-600 cursor-pointer bg-gradient-to-br from-purple-700'>Task - VCS</span></Link>
-            <div className="navHeadings max-sm:hidden  flex items-center justify-start gap-4 max-sm:flex-col py-2 ">
+            <Link to='/' className=' font-bold md:mr-4 max-sm:border-b-2 border-purple-900 max-sm:w-[100vw] p-2 py-3 '>
+                <img src={logo} alt='logo' width={48} height={48} className=' rounded-md border-1 border-gray-500 max-sm:ml-2'></img>
+            </Link>
+            <div className="navHeadings max-sm:hidden flex items-center justify-start gap-4 max-sm:flex-col py-2 ">
                 {navLinks.map((navLink,index) => {
                     const isActive = pathname === navLink.path;
                     return (
@@ -47,7 +49,7 @@ const Navbar = () => {
             </div>
         </div>
 
-        <div className="max-sm:absolute right-2 top-0 navRight flex items-center justify-center gap-2 ">
+        <div className="max-sm:absolute right-2 top-1 navRight flex items-center justify-center gap-2 ">
             <button onClick={toggleDarkMode} className={`text-${darkMode ? 'white' : 'gray-800'} focus:outline-none`}>
                 {darkMode ? (
                     <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
@@ -64,7 +66,7 @@ const Navbar = () => {
                     </svg>
                 )}
             </button>
-            <button className='hamburger rounded-full p-2 transition-all 300ms font-semibold w-8 max-sm:block hidden' onClick={()=>handleHam()}>
+            <button className='hamburger rounded-full p-2 py-3 transition-all 300ms font-semibold w-8 max-sm:block hidden' onClick={()=>handleHam()}>
                 {isOpen ? <>X</> : <p className='rotate-90 '>|||</p>}
             </button>
         </div>

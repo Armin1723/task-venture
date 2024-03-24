@@ -12,12 +12,29 @@ body, html{
     box-sizing: border-box;
 }
 
-body{
-    background-color: #eceef1;
-}
-
 /* Dark Mode */
 .darkMode{
     background: #1f1f1f;
     color: #fff;
 }
+
+/* Custom Scrollbar */
+body::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    border-radius: 2px;
+  }
+
+body::-webkit-scrollbar-track {
+    background: #09090a;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #4a4a72;
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #4c4c77;
+}
+
