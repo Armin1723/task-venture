@@ -52,17 +52,37 @@ const Navbar = ({darkMode, setDarkMode}) => {
         <div className="max-sm:absolute right-2 top-1 navRight flex items-center justify-center gap-2 ">
             <button onClick={toggleDarkMode} className={`text-${darkMode ? 'white' : 'gray-800'} focus:outline-none`}>
                 {darkMode ? (
-                    <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
-                        <path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-                        <path d="M0 0h24v24h-24z" fill="none"/>
-                        <path d="M14.26 6.47l1.77 1.77c.19.2.19.51 0 .71l-1.77 1.77c-.2.2-.51.2-.71 0l-1.77-1.77c-.2-.2-.2-.51 0-.71l1.77-1.77c.2-.2.51-.2.71 0zM17.71 15.29c.2-.2.2-.51 0-.71l-1.77-1.77c-.2-.2-.51-.2-.71 0l-1.77 1.77c-.2.2-.51.2-.71 0l1.77 1.77c.2.2.51.2.71 0l1.77-1.77zM8.54 6.47c.2-.2.51-.2.71 0l1.77 1.77c.2.2.2.51 0 .71l-1.77 1.77c-.2.2-.51.2-.71 0l-1.77-1.77c-.2-.2-.2-.51 0-.71l1.77-1.77zm-4.24 8.82l1.77-1.77c.2-.2.51-.2.71 0l1.77 1.77c.2.2.2.51 0 .71l-1.77 1.77c-.2.2-.51.2-.71 0l-1.77-1.77c-.2-.2-.2-.51 0-.71zm8.85-4.24l-1.77 1.77c-.2.2-.51.2-.71 0l-1.77-1.77c-.2-.2-.2-.51 0-.71l1.77-1.77c.2-.2.51-.2.71 0l1.77 1.77c.19.2.19.51 0 .71z"/>
+                    <svg width="30" height="30">
+                        <circle cx="15" cy="15" r="6" fill="currentColor" />
+                    
+                        <line
+                        id="ray"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        x1="15"
+                        y1="1"
+                        x2="15"
+                        y2="4"
+                        ></line>
+                    
+                        <use href="#ray" transform="rotate(45 15 15)" />
+                        <use href="#ray" transform="rotate(90 15 15)" />
+                        <use href="#ray" transform="rotate(135 15 15)" />
+                        <use href="#ray" transform="rotate(180 15 15)" />
+                        <use href="#ray" transform="rotate(225 15 15)" />
+                        <use href="#ray" transform="rotate(270 15 15)" />
+                        <use href="#ray" transform="rotate(315 15 15)" />
                     </svg>
                     ) : (
-                    <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
-                        <path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm0 18c-4.41 0-8-.59-8-3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-                        <path d="M0 0h24v24h-24z" fill="none"/>
-                        <path d="M18.364 5.636c-3.896-3.896-10.243-3.896-14.14 0s-3.896 10.243 0 14.14 10.243 3.896 14.14 0 3.896-10.243 0-14.14zm-1.414 12.728c-3.294 3.294-8.66 3.294-11.955 0-3.294-3.294-3.294-8.66 0-11.955 3.294-3.294 8.66-3.294 11.955 0 3.294 3.295 3.294 8.661 0 11.955z"/>
-                        <circle cx="12" cy="12" r="5"/>
+                    <svg width="30" height="30">
+                        <path
+                          fill="currentColor"
+                          d="
+                            M 23, 5
+                            A 12 12 0 1 0 23, 25
+                            A 12 12 0 0 1 23, 5"
+                        />
                     </svg>
                 )}
             </button>
