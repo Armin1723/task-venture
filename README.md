@@ -36,19 +36,22 @@ To run Task-Venture locally, follow these steps:
 
 5. Open your web browser and visit http://localhost:3000 to view the application.
 
-##Live Demo
+## Live Demo
+
 Explore the live demo of Task-Venture here.
 
-##Screenshots
+## Screenshots
+
 Take a look at some screenshots of Task-Venture:
 
 
 
-##Contributing
+## Contributing
+
 Contributions to Task-Venture are welcome! To contribute, please follow these guidelines:
 
--Fork the repository
--Create your feature branch (git checkout -b feature/your-feature)
--Commit your changes (git commit -am 'Add some feature')
--Push to the branch (git push origin feature/your-feature)
--Open a pull request
+- Fork the repository
+- Create your feature branch (git checkout -b feature/your-feature)
+- Commit your changes (git commit -am 'Add some feature')
+- Push to the branch (git push origin feature/your-feature)
+- Open a pull request
