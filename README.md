@@ -44,11 +44,11 @@ Explore the live demo of Task-Venture here.
 
 Take a look at some screenshots of Task-Venture:
 
-![Homepage](/assets/homepage.jpg)
+![Homepage](/src/assets/homepage.jpg)
 
-![Homepage-dark](/assets/homepage-dark.jpg)
+![Homepage-dark](/src/assets/homepage-dark.jpg)
 
-![Mobile View](/assets/mobile-view.jpg)
+![Mobile View](/src/assets/mobile-view.jpg)
 
 
 
