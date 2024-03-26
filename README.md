@@ -38,7 +38,8 @@ To run Task-Venture locally, follow these steps:
 
 ## Live Demo
 
-Explore the live demo of Task-Venture here.
+Explore the live demo of Task-Venture .
+[here](https://www.task-venture.netlify.app)
 
 ## Screenshots
 
