@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { generateReport } from '../services/services';
 
-const PDFReport = ({darkMode}) => {
+const PDFreport = ({darkMode}) => {
 
     const [formData, setFormData] = useState({
         email: '',
@@ -94,4 +94,4 @@ const PDFReport = ({darkMode}) => {
 
     </div>
   )}
-export default PDFReport
+export default PDFreport
