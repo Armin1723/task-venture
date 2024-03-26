@@ -44,6 +44,13 @@ Explore the live demo of Task-Venture here.
 
 Take a look at some screenshots of Task-Venture:
 
+![Homepage](/assets/homepage.jpg)
+
+![Homepage-dark](/assets/homepage-dark.jpg)
+
+![Mobile View](/assets/mobile-view.jpg)
+
+
 
 
 ## Contributing
